@@ -3,6 +3,7 @@
 # filter (критерии отбора, iterable)
 from string import capwords
 
+"""
 words = ['Только','длинные', 'слова', 'пройдут', 'дальше', 'гидроэлектростанция+']
 
 def double(x):
@@ -30,3 +31,19 @@ print(list(cap))
 
 res = filter(long_word, words)
 print(list(res))
+
+"""
+
+
+# Лямбда-функции
+# анонимные функции, безымянные функции
+# функции-однострочные
+
+
+
+
+
+
+a = [1, 2, 3]
+b = map(lambda x: x * 2, a)
+print(list(b))
