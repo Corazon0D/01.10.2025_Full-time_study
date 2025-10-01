@@ -6,6 +6,7 @@ from glob import translate
 
 
 # Ternary if (Тернарный if)
+# <Выражение если tru> if <условие> else <выражение, если false>
 def weather(temp):
     return 'тепло' if temp > 15 else 'холодно'
 
