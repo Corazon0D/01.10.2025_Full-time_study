@@ -1,5 +1,6 @@
 # Функции
 from tkinter.font import names
+import statistics
 
 temperatures = [13, 11, 7, -1, 7, 9, 10]
 
@@ -35,6 +36,13 @@ def max_vale(temperatures):
     return max_val  # возвращение значения и завершение работы
 
 
+def round_len_and_sqare(radius):
+    print(f'Площадь круга с радиусов {radius} = '
+          f'{radius ** 2 * 3.14}')
+    print(f'Длина окружности с радиусом {radius} = '
+          f'{radius * 2 * 3.14}')
+
+
 def avarage(temperatures):
     count = len(temperatures)  # число элементов в списке
     summ = 0  # изначальная сумма нулевая
@@ -46,3 +54,6 @@ def avarage(temperatures):
 print(max_vale(temperatures))
 print(min_vale(temperatures))
 print(avarage(temperatures))
+print(sum(temperatures) / len(temperatures))
+print(statistics.mean(temperatures))  # встроенной нет, но есть библиотека
+round_len_and_sqare(5)
