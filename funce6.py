@@ -44,6 +44,10 @@ print(list(res))
 
 
 
-a = [1, 2, 3]
+a = (1, 2, 3)
 b = map(lambda x: x * 2, a)
 print(list(b))
+
+words = ['Только','длинные', 'слова', 'пройдут', 'дальше', 'гидроэлектростанция']
+long_word = filter(lambda word: len(word) > 10, words)
+print(list(long_word))
